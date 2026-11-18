@@ -2,7 +2,7 @@
 
 ## 1. Thay đổi so với v1.0
 
-Giữ phạm vi tính năng Lab 8, thêm định nghĩa chạy đúng bằng metric, gate chặn regression và trách nhiệm xử lý. Bằng chứng: baseline `E-swarm-20261117-a270`, fixed `E-fixed-20261117-a270`, regression `E-seeded_regression-20261117-a270`. Định danh code trong [eval card](eval_card.md).
+Giữ phạm vi tính năng Lab 8, thêm định nghĩa chạy đúng bằng metric, gate chặn regression và trách nhiệm xử lý. Bằng chứng: baseline `E-swarm-20261118-90ac`, fixed `E-fixed-20261118-90ac`, regression `E-seeded_regression-20261118-90ac`. Định danh code trong [eval card](eval_card.md).
 
 ## 2. Phạm vi pilot đề xuất
 
@@ -10,7 +10,7 @@ Trong phạm vi: đánh giá offline yêu cầu hoàn phí giao trễ/bồi thư
 
 ## 3. Định nghĩa chạy đúng
 
-Bảng trích config/metric_spec.yaml và baseline `E-swarm-20261117-a270`:
+Bảng trích config/metric_spec.yaml và baseline `E-swarm-20261118-90ac`:
 
 | Metric | Loại | Ngưỡng | Chặn release? | Baseline |
 |---|---|---|---|---|

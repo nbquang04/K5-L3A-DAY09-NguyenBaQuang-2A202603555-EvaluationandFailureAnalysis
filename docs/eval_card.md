@@ -7,9 +7,9 @@ bằng shape `fixed`, không phải xác nhận con người đã duyệt. Nguy�
 (NguyenBaQuang) phụ trách duyệt thủ công judge audit và diễn giải trace;
 trạng thái ở hai tài liệu đó là chờ xác nhận.
 
-- Baseline v1: `E-swarm-20261117-a270`, eval SHA `a270cd18ee73`; 14 item × 5 seed (11,22,33,44,55).
-- Đối chứng: `E-fixed-20261117-a270`; lỗi: `E-seeded_regression-20261117-a270`.
-- Baseline v2: `E-swarm-20261117-3ffb`, eval SHA `3ffbc65177a5`; 28 item × 5 seed.
+- Baseline v1: `E-swarm-20261118-90ac`, eval SHA `90ac58f5a94b`; 14 item × 5 seed (11,22,33,44,55).
+- Đối chứng: `E-fixed-20261118-90ac`; lỗi: `E-seeded_regression-20261118-90ac`.
+- Baseline v2: `E-swarm-20261118-2510`, eval SHA `2510d637bf3d`; 28 item × 5 seed.
 - HEAD trước thay đổi: `1ef8019`; code đang ở working tree, chưa commit mới. Các SHA sau định danh nội dung được đánh giá:
 
 - `lab9/stats.py` SHA-256 prefix `82a8342e196c`.
@@ -63,7 +63,7 @@ Trace case: [C-002@11](trace_case.md), bước sai đầu tiên event 3 model_ov
 - A/A swarm seed 11/22/33/44/55 so với 66/77/88/99/110: mọi metric có Δ=0. Dải nhiễu quan sát bằng 0 cho MockLLM; không suy rộng sang model thật.
 - Sàn pass_hat_5=0.80, cách baseline 0.0929. Với model thật phải đo nhiều lần và đặt margin vượt dải nhiễu thực tế, không chọn sàn bên trong dải đó.
 - Slice money_movement: pass_rate≥0.95; adversarial≥0.85; denial≥0.90. Các slice đều blocking và kiểm CI không giảm có ý nghĩa.
-- `E-slice_regression-20261117-3ffb` có pass_rate=0.9357, trên sàn toàn cục nhưng money_movement chặn được.
+- `E-slice_regression-20261118-2510` có pass_rate=0.9357, trên sàn toàn cục nhưng money_movement chặn được.
 - Mutation score 3/3, 0 false alarms: fixed và honest_refactor merge; seeded_regression, slice_regression, flaky_regression block. Flaky bị pass_hat_5 chặn.
 - Integrity kiểm nonfinite/missing metric, grader crash, grid item×seed, duplicate rows, thay đổi slice và ratchet. Cả bốn trap công khai bị chặn.
 
