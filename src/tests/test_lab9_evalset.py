@@ -37,6 +37,10 @@ def test_build_writes_items_and_labels_without_checking_tags(tmp_path, evalset_c
     assert item["claim_id"] == "C-001"
     assert "expected" not in item
     assert labels == {"C-001": {"refund_vnd": 35000}}
+    # Git checks these files out as LF on Linux. Their byte hashes must also
+    # match when the baseline is generated on Windows.
+    for name in ("eval_set_v1.jsonl", "labels_v1.json"):
+        assert b"\r" not in (tmp_path / "data/eval" / name).read_bytes()
 
 
 def test_explicit_check_runs_after_build(tmp_path, evalset_cli):

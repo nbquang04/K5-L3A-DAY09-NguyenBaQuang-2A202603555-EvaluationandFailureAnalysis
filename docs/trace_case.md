@@ -5,7 +5,7 @@ trạng thái duyệt thủ công: chờ xác nhận. Đối chứng và regress
 
 | Trường | Nội dung |
 |---|---|
-| Trial | seeded_regression C-002@11, report E-seeded_regression-20261117-a270 |
+| Trial | seeded_regression C-002@11, report E-seeded_regression-20261118-90ac |
 | Triệu chứng | Kỳ vọng denied, ledger 0; thực tế resolved và ledger 20.000đ. |
 | Bước sai đầu tiên | Event 3 model_override: delay_days=5. |
 | Vì sao đầu tiên | Event 1 handoff chỉ cấp tool đọc; event 2 investigator đã đọc đúng DB delay_days=2. Event 3 mới thay dữ kiện bằng số ngày trong ticket. |
